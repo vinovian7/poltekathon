@@ -1,0 +1,18 @@
+# SPECTRA Development Rules for AI Agents
+
+You are working on SPECTRA, an Air-Gapped Cyber Threat Rapid Analyzer in Pure Go (CGo disabled).
+
+## MANDATORY AUTONOMOUS PROGRESS LOGGING:
+- Whenever you make code modifications or finish a task, you MUST autonomously update `PROJECT_LOG.md` before returning your answer.
+- Append a new row in `PROJECT_LOG.md` under `## 📜 Riwayat Sesi & Changelog Kolaboratif` detailing:
+  - Timestamp
+  - Changes made
+  - Files modified/created
+  - Test and verification results
+- Do NOT wait for the user to prompt you to update `PROJECT_LOG.md`.
+
+## CORE ARCHITECTURAL RULES:
+1. Pure Go: CGO_ENABLED=0. Never use C-libraries or pcap drivers.
+2. Zero Persistence: In-memory only. No disk DBs.
+3. Air-Gapped: Zero external CDNs or internet calls in frontend.
+4. Standalone binary: Under 10 MB.

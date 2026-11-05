@@ -1,0 +1,27 @@
+# Binaries & Executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/bin/
+/spectra
+
+# Temporary & Session Logs
+*.log
+tunnel_session.log
+public_url.txt
+
+# Generated Triage Output (Session Specific - to prevent merge conflicts)
+triage_result.json
+triage_dossier.html
+spectra_playbook.txt
+spectra_executive_briefing.txt
+spectra_blocklist_*
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/

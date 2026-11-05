@@ -1,0 +1,15 @@
+[
+  {
+    "id": "RULE-CUSTOM-WP-01",
+    "name": "WordPress XML-RPC Brute Force / Pingback Attack",
+    "risk_level": "HIGH",
+    "target_protocol": "HTTP",
+    "match_type": "ExactString",
+    "pattern": "system.multicall",
+    "mitre_id": "T1110.001",
+    "mitre_tactic": "Credential Access",
+    "recommendation": "Nonaktifkan endpoint xmlrpc.php atau terapkan rate-limiting ketat via WAF.",
+    "score_weight": 20,
+    "enabled": true
+  }
+]
